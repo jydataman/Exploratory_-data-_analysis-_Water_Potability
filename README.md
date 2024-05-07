@@ -140,6 +140,9 @@ ggplot(plot_data, aes(x = Potability, y = Count, fill = Potability)) +
   theme_minimal()
 
 
+![1chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/1472b2aa-869d-488c-bde0-c25787253e1d)
+
+
 #### Count of Potable and Non-Potable Water
 library(ggplot2)
 
@@ -159,7 +162,10 @@ ggplot(data_counts, aes(x = Category, y = Count, fill = Category)) +
   theme_minimal()
 
 ```
-1chart.png
+![2chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/9c3a9ccf-bfe5-4637-9b99-6d0881f7a52f)
+
+
+
 
 
 
@@ -188,6 +194,8 @@ plot_non_healthy <- df_cleanData %>%
        fill = "Potability") + 
   theme_minimal()
 
+
+
 # Plot 2: Healthy Hardness
 plot_healthy <- df_cleanData %>%
   filter(Hardness >= 60 & Hardness <= 120) %>%
@@ -207,6 +215,7 @@ library(gridExtra)
 grid.arrange(plot_non_healthy, plot_healthy, ncol = 2, top = "Potability Comparison")  
 
 ```
+![3chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/4418f658-78a6-470d-bf8a-4270d91d951a)
 
 
 
@@ -248,6 +257,7 @@ ggplot() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
+![4hcart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/49ae2856-8d8f-40ec-b517-adc80a3e6a69)
 
 
 **Observation:** The healthy amounts of Chloramines is up to 4.5. So I expected potability to be higher since I filtered out only showed the healthy values under 4.5. The Values were Really close. 52%  of healthy chloramines is potable.
@@ -278,6 +288,7 @@ ggplot() +
 
 ```
 
+![5chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/eb4a66f0-55a9-40d9-8b30-cd1b966a5569)
 
 
 **Observation:** The Unhealthy amounts of Chloramines is past 4.5. So I expected Potability to be lower since I filtered out to only show the  values above 4.5.It its 40%  of non-healthy chloramines is potable.
@@ -310,6 +321,7 @@ ggplot(onlyTmh, aes(x = Potability, y = Trihalomethanes, fill = Potability)) +
   
   theme_minimal()
 ```
+![6chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/8fbb8aad-f1bb-4321-9a10-eb46ef56a369)
 
 
 
@@ -421,6 +433,15 @@ print(plot_Chloramines)
 print(plot_Trihalomethanes)
 
 ```
+![7chart1](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/ed645de7-8998-49e6-8561-556bd80ac61c)
+
+![8chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/6901a055-655d-456a-a311-66542087551a)
+
+![9chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/8a32f83a-6b57-47a1-be69-f38bf3881a83)
+
+
+![10chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/8ca03ff3-fbdf-480e-9b3c-89d55f05de50)
+
 
 # Results
 
@@ -452,6 +473,9 @@ prediction_result <- cbind(test_data, Potability_Prediction = prediction)
 knitr::kable(prediction_result, caption = "To see how well it can predict potability for different scenarios. 1 means can predict 0 means cannot predict")
 ```
 
+![11chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/2ab4eff5-7553-466b-b1ed-dcca619e88b2)
+
+
 
 ### Checking with Inverse Predecitve Model
 ```{r, message=FALSE, warning=FALSE}
@@ -477,6 +501,9 @@ synthetic_data_potable <- generate_synthetic_data(100, selected_data[selected_da
 head(synthetic_data_potable)
 ```
 
+![12chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/bb0b2a84-ca4e-4c57-8964-5634b7b1e64a)
+
+
 ### Overview of the dataset: Mean and Median to further investigate
 ```{r,message=FALSE, warning=FALSE}
 
@@ -496,6 +523,9 @@ print(median_values_potable)
 cat("\nMedian values for not potable water:\n")
 print(median_values_not_potable)
 ```
+
+![13chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/cf4f6c99-722a-40d3-bce6-80ad510468dc)
+
 
 # Analysis
 
