@@ -103,7 +103,11 @@ df_nonPotableOnly <- df_cleanData %>%
 
 # Exploratory Data Analysis (EDA)
 
-- For the remaining of the paper, I am only going to investigate 4 metrics of water: pH, Hardness, Chloramines, and Trihalomethanes. 
+- For the remaining of the paper, I am only going to investigate 4 metrics of water:
+- pH 
+- Hardness
+- Chloramines
+- Trihalomethanes. 
 - After doing research, these 4 variables are the ones I am most interested in and believe can effect potability the most since they have do a lot of what makes water clean in the first place. So I would like to research further into them.
 
 
@@ -155,6 +159,7 @@ ggplot(data_counts, aes(x = Category, y = Count, fill = Category)) +
   theme_minimal()
 
 ```
+1chart.png
 
 
 
