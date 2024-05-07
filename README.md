@@ -140,7 +140,6 @@ ggplot(plot_data, aes(x = Potability, y = Count, fill = Potability)) +
   theme_minimal()
 
 
-![1chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/1472b2aa-869d-488c-bde0-c25787253e1d)
 
 
 #### Count of Potable and Non-Potable Water
@@ -162,8 +161,10 @@ ggplot(data_counts, aes(x = Category, y = Count, fill = Category)) +
   theme_minimal()
 
 ```
-![2chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/9c3a9ccf-bfe5-4637-9b99-6d0881f7a52f)
 
+![1chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/1472b2aa-869d-488c-bde0-c25787253e1d)
+
+![2chart](https://github.com/jydataman/Exploratory_-data-_analysis-_Water_Potability/assets/141103262/9c3a9ccf-bfe5-4637-9b99-6d0881f7a52f)
 
 
 
